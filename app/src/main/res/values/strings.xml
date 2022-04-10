@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gov Weather</string>
+    <string name="weather_label">Weather forecast for:</string>
+    <string name="location_unavailable">Location unavailable</string>
+    <string name="location_template">%s, %s</string>
+    <string name="temperature_template">%dºF</string>
+</resources>
