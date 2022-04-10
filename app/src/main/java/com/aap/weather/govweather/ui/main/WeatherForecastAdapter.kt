@@ -44,15 +44,15 @@ class WeatherForecastAdapter: RecyclerView.Adapter<HourlyDataVH>() {
         holder.binding.time.text = getTimeString(holder.itemView.context, periodDataVO)
         val imageUrl = periodDataVO.icon
         if (imageUrl.isNullOrBlank()) {
-            Glide.with(holder.binding.imageView.context).clear(holder.binding.imageView)
+            Glide.with(holder.binding.weatherThumbnailImage.context).clear(holder.binding.weatherThumbnailImage)
         } else {
             val theImage = GlideUrl(
                 imageUrl, LazyHeaders.Builder()
                     .addHeader("User-Agent", "Android")
                     .build()
             )
-            Glide.with(holder.binding.imageView.context).load(theImage)
-                .into(holder.binding.imageView)
+            Glide.with(holder.binding.weatherThumbnailImage.context).load(theImage)
+                .into(holder.binding.weatherThumbnailImage)
         }
     }
 

@@ -4,4 +4,6 @@
     <string name="location_unavailable">Location unavailable</string>
     <string name="location_template">%s, %s</string>
     <string name="temperature_template">%dºF</string>
+    <string name="locations">Available Locations</string>
+    <string name="title">Weather App</string>
 </resources>
